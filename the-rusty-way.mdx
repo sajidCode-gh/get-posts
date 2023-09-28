@@ -13,13 +13,10 @@ tags:
 In this article we'll be implementing FizzBuzz in Rust `🦀`  
 We'll start with a naive implementation, and then we'll refactor it to make it more reusable. Along the way, we'll learn about Rust's `enum{:rust}`s and `trait{:rust}`s and play around with `match{:rust}` expressions, while using TypeScript for comparison.
 
-<Callout type="note">
 
 I'm still learning Rust, so if you see any mistakes or have any suggestions, please let me know in the comments!
 
-</Callout>
 
-<TableOfContents>
 
 - [Enums in Rust](#enums-in-rust)
 - [Traits in Rust](#traits-in-rust)
@@ -27,7 +24,6 @@ I'm still learning Rust, so if you see any mistakes or have any suggestions, ple
 - [FizzBuzz: The Rusty Way](#fizzbuzz-the-rusty-way)
 - [Extending FizzBuzz](#extending-fizzbuzz)
 
-</TableOfContents>
 
 ## Enums in Rust
 
@@ -136,7 +132,6 @@ let dog = Dog;
 dog.speak(); // Woof!
 ```
 
-<Callout type="note">
 
 Rust allows you implement native traits for your custom types, as well as custom traits for native types, which I think is pretty cool.  
 You can also implement traits for enums, which we'll do later.
@@ -180,11 +175,9 @@ enum FizzBuzz {
 }
 ```
 
-<Callout type="note">
 
 The `Number{:rust}` variant is associated with the `u32{:rust}` type. This means that `FizzBuzz::Number(){:rust}` is a function that constructs an instance of the `Number{:rust}` variant that holds a `u32{:rust}` value. We could have called this variant however we wanted.
 
-</Callout>
 
 Next, we'll associate a method called `new{:.fn}` with the `FizzBuzz{:rust}` enum. This method will take a number and return the appropriate `FizzBuzz{:rust}` variant.
 
