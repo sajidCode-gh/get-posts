@@ -21,6 +21,22 @@ I'm still learning Rust, so if you see any mistakes or have any suggestions, ple
 -   [FizzBuzz: The Rusty Way](#fizzbuzz-the-rusty-way)
 -   [Extending FizzBuzz](#extending-fizzbuzz)
 
+
+## Below is the rect component.
+
+```jsx
+function calculateFactorial(number) {
+  if (number === 0 || number === 1) {
+    return 1;
+  } else {
+    return number * calculateFactorial(number - 1);
+  }
+}
+
+const result = calculateFactorial(5); // Calculate factorial of 5
+console.log(`Factorial of 5 is: ${result}`);
+```
+
 ## Enums in Rust
 
 One thing that stood out to me when learning Rust, was that unlike TypeScript enums, Rust enums are acutally useful.
